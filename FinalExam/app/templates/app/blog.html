@@ -7,8 +7,7 @@
         <table>
         {% for list in menulist %}
             <ul>
-                <li>{{list.menuname}}</li>
-                <li>{{list.contents}}</li>
+                <li><a href = "{{list.pk}}/">{{list.menuname}}</a></li>
             </ul>
         {% endfor %}
         </table>
