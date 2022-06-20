@@ -6,9 +6,8 @@
         <h1>자기소개</h1>
         <table>
         {% for list in menulist %}
-            <ul>
-                <li><a href = "{{list.pk}}/">{{list.menuname}}</a></li>
-            </ul>
+            <li>{{list.menuname}}</li>
+            <li>{{list.contents}}</li>
         {% endfor %}
         </table>
     </body>
